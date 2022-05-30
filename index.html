@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CodePro.vn - CyberSoft.edu.vn </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div id="dmeGrap" class="container-contact100">
+        <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+        <div class="contact100-more">
+            <i class="zmdi zmdi-phone-in-talk"></i> (+84) 961.05.10.14
+        </div>
+
+        <div class="wrap-contact100">
+
+
+            <div>
+                <img src="images/cybersoft.png" alt="Front End CyberSoft" width="40%" />
+                <span style="padding:20px"></span>
+                <img src="images/codepro.png" alt="Front End CyberSoft" width="30%" />
+
+                <div style="clear:both"></div>
+                <span class="contact100-form-title">
+					TÍNH CƯỚC Grab
+				</span>
+                <h2>Vui lòng chọn loại xe:</h2>
+                <ul>
+                    <li class="type">
+                        <input id="GrabX" type="radio" name="selector" checked>
+                        <label for="GrabX">Grab X</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li class="type">
+                        <input id="GrabSUV" type="radio" name="selector">
+                        <label for="GrabSUV">Grab SUV</label>
+                        <div class="check"></div>
+                    </li>
+
+                    <li class="type">
+                        <input id="GrabBlack" type="radio" name="selector">
+                        <label for="GrabBlack">Grab Black</label>
+                        <div class="check"></div>
+                    </li>
+                </ul>
+
+            </div>
+            <div style="clear:both;"></div>
+
+            <form class="contact100-form">
+                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                    <h2>Nhập vào số KM </h2>
+                    <input id="soKM" class="input100" type="text" name="name" placeholder="Số KM ...">
+                    <span class="focus-input100"></span>
+
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                    <h2>Nhập thời gian chờ </h2>
+                    <input id="thoiGianCho" class="input100" type="text" name="name" placeholder="Thời gian chờ  ...">
+                    <span class="focus-input100"></span>
+
+                </div>
+
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button id="tinhTien" type="button" class="contact100-form-btn">
+						TÍNH TIỀN
+					</button>
+                </div>
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button id="inHoaDon" type="button" class="contact100-form-btn" data-toggle="modal" data-target="#exampleModal">
+						IN HÓA ĐƠN
+					</button>
+                </div>
+
+            </form>
+
+            <div style="clear:both"></div>
+            <div id="divThanhTien" class="dongia">
+                <h2>Thành tiền:
+                    <span id="xuatTien" class="xuatTien"> 12345</span> vnd
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="prinDiv" style="display:none;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>loại xe</th>
+                    <th> số km</th>
+                    <th> thời gian chờ</th>
+                    <th> tổng tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="td-loaixe"></td>
+                    <td id="td-soKm"></td>
+                    <td id="td-thoiGianCho"></td>
+                    <td id="td-tongTien"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!--===============================================================================================-->
+
+
+    <!--===============================================================================================-->
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
